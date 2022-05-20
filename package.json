@@ -1,0 +1,51 @@
+{
+  "name": "@do-while-for-each/react-tools",
+  "description": "Tools for React.js app",
+  "version": "1.0.0",
+  "exports": "./dist/cjs/index.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/types/*"
+      ]
+    }
+  },
+  "homepage": "https://github.com/dwfe/react-tools",
+  "bugs": "https://github.com/dwfe/react-tools/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dwfe/react-tools.git"
+  },
+  "keywords": [
+    "react-tools"
+  ],
+  "author": "Do|While|For|Each",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "18.x.x"
+  },
+  "dependencies": {
+    "@do-while-for-each/common": "^1.2.16",
+    "@do-while-for-each/provider": "^1.0.4",
+    "@do-while-for-each/rxjs": "^1.1.9"
+  },
+  "devDependencies": {
+    "@do-while-for-each/react-cmmn-packs": "file:../dry/react-cmmn-packs/do-while-for-each-react-cmmn-packs-1.0.0.tgz",
+    "@do-while-for-each/tsconfig": "^1.0.3"
+  },
+  "scripts": {
+    "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
+    "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json",
+    "version": "npm run build",
+    "postversion": "git push",
+    "deploy": "npm version patch && npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
