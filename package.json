@@ -30,13 +30,13 @@
     "react": "18.x.x"
   },
   "dependencies": {
-    "@do-while-for-each/common": "^1.2.16",
-    "@do-while-for-each/provider": "^1.0.4",
-    "@do-while-for-each/rxjs": "^1.1.9"
+    "@do-while-for-each/common": "1.x.x",
+    "@do-while-for-each/provider": "1.x.x",
+    "@do-while-for-each/rxjs": "1.x.x"
   },
   "devDependencies": {
-    "@do-while-for-each/react-cmmn-packs": "file:../dry/react-cmmn-packs/do-while-for-each-react-cmmn-packs-1.0.0.tgz",
-    "@do-while-for-each/tsconfig": "^1.0.3"
+    "@do-while-for-each/react-cmmn-packs": "1.x.x",
+    "@do-while-for-each/tsconfig": "1.x.x"
   },
   "scripts": {
     "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
