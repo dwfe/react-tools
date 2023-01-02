@@ -30,7 +30,6 @@
     "react": "18.x.x"
   },
   "dependencies": {
-    "@do-while-for-each/common": "1.x.x",
     "@do-while-for-each/provider": "1.x.x"
   },
   "devDependencies": {
@@ -42,8 +41,8 @@
     "bootstrap": "npm run clean && npm install",
     "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json",
     "version": "npm run build",
-    "postversion": "git push",
-    "deploy": "npm version patch && npm publish"
+    "deploy": "npm version patch && npm publish",
+    "tgz": "npm run build && npm pack"
   },
   "publishConfig": {
     "access": "public"
